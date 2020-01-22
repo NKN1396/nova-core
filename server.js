@@ -14,7 +14,7 @@ const makeshiftbot = new commando.Client({
 })
 
 //Load and register commands.
-require("./src/commands/index")(makeshiftbot)
+require("./commands/index")(makeshiftbot)
 
 let handlerOptions = {
 	logAllGuilds: false,

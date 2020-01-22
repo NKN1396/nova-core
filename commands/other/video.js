@@ -5,8 +5,8 @@ module.exports = class extends Command {
 		let options = {
 			group: "other",
 			name: "video",
-			aliases: ["webcam", "voice"],
-			description: "Requests a video link for the current voice channel."
+			aliases: ["webcam", "voice", "broadcast", "hangout", ""],
+			description: "Posts a link for the current voice channel that can be used to hold a group video call."
 		}
 		super(client, options)
 	}
