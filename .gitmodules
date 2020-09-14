@@ -1,0 +1,3 @@
+[submodule "submodules/nova-eslint"]
+	path = submodules/nova-eslint
+	url = https://github.com/NKN1396/nova-eslint
