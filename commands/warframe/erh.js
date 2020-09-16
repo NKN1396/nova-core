@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "erh",
 			aliases: ["eidolon", "eidolonrecruitmenthub", "eidolonrecruit", "recruitmenthub", "hub"],
-			group: "resources",
+			group: "warframe",
 			description: "Eidolon Recruitment Hub Discord"
 		})
 	}

@@ -9,7 +9,7 @@ module.exports = class extends Command {
 				"warframe.market", "warframemarket", "wf.market", "nexus", "nexusstats", "price", "prices", "rivens", "warframetrader",
 				"wftrader.com", "rivenmods", "warframe.trader", "rivens.market", "trade", "trades", "trading"
 			],
-			group: "resources",
+			group: "warframe",
 			description: "Links related to trading in Warframe"
 		})
 	}

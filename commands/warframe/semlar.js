@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "semlar",
 			aliases: ["rivencalc"],
-			group: "resources",
+			group: "warframe",
 			description: "Semlar, a website with Riven-, Amp- and Zaw-calculators"
 		})
 	}

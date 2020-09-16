@@ -9,7 +9,7 @@ module.exports = class extends Command {
 				"tracker",
 				"tracking"
 			],
-			group: "resources",
+			group: "warframe",
 			description: "An event tracker for Warframe"
 		})
 	}

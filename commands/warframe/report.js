@@ -5,7 +5,7 @@ module.exports = class extends Command {
 	constructor(client) {
 		super(client, {
 			name: "report",
-			group: "resources",
+			group: "warframe",
 			description: "How to report inadequate player bevaior to Digital Extremes"
 		})
 	}

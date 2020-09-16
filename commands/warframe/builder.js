@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "builder",
 			aliases: ["builds", "warframe-builder", "wf-builder", "distantobserver", "distant-observer", "observer", "calculator", "tennoware"],
-			group: "resources",
+			group: "warframe",
 			description: "Warframe builds"
 		})
 	}

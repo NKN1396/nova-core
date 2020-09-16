@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "droptable",
 			aliases: ["drops", "droptables", "repo", "repository" ],
-			group: "resources",
+			group: "warframe",
 			description: "Warframe drop table"
 		})
 	}

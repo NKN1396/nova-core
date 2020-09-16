@@ -7,7 +7,7 @@ module.exports = class extends Command {
 			name: "cetus",
 			aliases: [
 			],
-			group: "resources",
+			group: "warframe",
 			description: "DEBUG"
 		})
 	}

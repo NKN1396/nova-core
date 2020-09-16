@@ -7,7 +7,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "wiki",
 			aliases: ["warframewiki", "wfwiki", "wikia", "wikilink", "fandom"],
-			group: "resources",
+			group: "warframe",
 			description: "Link to the Warframe wiki"
 		})
 	}

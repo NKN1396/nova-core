@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "archives",
 			aliases: ["wfta", "ta", "warframearchives", "warframeteachingarchives"],
-			group: "resources",
+			group: "warframe",
 			description: "Warframe Teaching Archives Discord"
 		})
 	}

@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "raidstats",
 			aliases: ["christx", "trials.wf", "wf.christx.tw", "raidtrack", "raidtracker", "raidtrackers", "trials", "trials.wf"],
-			group: "resources",
+			group: "warframe",
 			description: "Raiding history trackers"
 		})
 	}

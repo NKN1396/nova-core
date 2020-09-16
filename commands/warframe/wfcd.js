@@ -4,18 +4,18 @@ const {stripIndents} = require("common-tags")
 module.exports = class extends Command {
 	constructor(client) {
 		super(client, {
-			name: "blackmarket",
-			aliases: ["bm", "wartrade"],
-			group: "resources",
-			description: "Warframe Black Market Discord"
+			name: "wfcd",
+			group: "warframe",
+			description: "Warframe community Discord"
 		})
 	}
 
 	async run(message) {
 		try {
-			await message.react("✅")
-			message.channel.send(stripIndents`WarTrade (formerly Black Market) Discord:
-			https://discord.gg/EwD6J37`)
+			await message.channel.send(stripIndents`Warframe Community Discord:
+			https://discord.gg/warframe
+			The biggest Discord server dedicated to Warframe.`)
+			message.react("✅")
 		} catch (error) {
 			console.error(error)
 		}

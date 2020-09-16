@@ -4,19 +4,18 @@ const {stripIndents} = require("common-tags")
 module.exports = class extends Command {
 	constructor(client) {
 		super(client, {
-			name: "glyphs",
-			aliases: ["glyph"],
-			group: "resources",
-			description: "List of all Warframe glyphs"
+			name: "folren",
+			aliases: ["folrunhow"],
+			group: "warframe",
+			description: "Folren's Riven Epicness Server"
 		})
 	}
 
 	async run(message) {
 		try {
-			await message.channel.send(stripIndents`Glyphdex:
-			<https://glyphs.wf/>
-			*A site listing all Warframe glyphs.
-			Features a tracker and info on how to obtain most glyphs.*`)
+			await message.channel.send(stripIndents`Folren's Riven Epicness Server:
+			https://discord.gg/rnzSW6k
+			*Home of Folrunhow, a bot for estimating Riven prices.*`)
 			message.react("✅")
 		} catch (error) {
 			console.error(error)
