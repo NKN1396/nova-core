@@ -1,5 +1,5 @@
 const Command = require("./../../utils/novaCommand")
-const { name } = require("./../../../package.json")
+const { name } = require("./../../package.json")
 
 module.exports = class extends Command {
 	constructor(client) {

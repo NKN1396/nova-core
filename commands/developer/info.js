@@ -1,5 +1,5 @@
 const Command = require("./../../utils/novaCommand")
-const info = require("./../../../package.json")
+const info = require("./../../package.json")
 const { stripIndents } = require("common-tags")
 
 module.exports = class extends Command {

@@ -5,16 +5,12 @@ const path = require("path")
  * @param {Object} client The CommandoClient to register the commands in.
  */
 module.exports = function(client) {
+	console.log("nova-core: attempting to load commands")
 	client.registry
 		.registerGroups([
 			["developer", "Developer"],
-			["makeshift", "Makeshift"],
-			["resources", "Resources"],
-			["memes-warframe", "Memes (Warframe)"],
-			["memes-makeshift", "Memes (Makeshift)"],
-			["memes-generic", "Memes (general)"],
-			["other", "Other"],
-			["music", "Music"]
+			["warframe", "Warframe Resources"],
+			["other", "Other"]
 		])
 		.registerDefaultGroups()
 		.registerDefaultTypes()
@@ -29,5 +25,5 @@ module.exports = function(client) {
 				"unknownCommand": false
 			}
 		)
-	console.log("Nova commands loaded.")
+	console.log("nova-core: commands loaded")
 }
