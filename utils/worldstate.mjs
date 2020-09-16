@@ -1,10 +1,11 @@
-let worldstateUrl = "https://content.warframe.com/dynamic/worldState.php"
-const fetch = require("node-fetch")
+import fetch from "node-fetch"
+
+const worldstateUrl = "https://content.warframe.com/dynamic/worldState.php"
 
 var lastResponse = {}
 var timestampNextFetch = 0
 
-module.exports = function() {
+export default function() {
 	return new Promise((resolve, reject) => {
 		if(Date.now() < timestampNextFetch) {
 			//Worldstate less than a minute old
