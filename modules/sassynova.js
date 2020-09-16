@@ -1,8 +1,8 @@
-//Config
-const trigger = "Nova,".toLowerCase()
-
 //Dependencies
-var { sample } = require("lodash")
+import { sample } from "lodash"
+
+//Config
+const trigger = /^nova,/i
 
 /**
  * Makes Nova respond with sassy comments after being asked a question.
@@ -11,7 +11,7 @@ var { sample } = require("lodash")
 module.exports = function(client){
 	client.on("message", async message => {
 
-		if(!message.content.toLowerCase().startsWith(trigger)) return
+		if(!message.content.match(trigger)) return
 
 		message.channel.send(pickAnswer(message))
 			.catch(console.error)
