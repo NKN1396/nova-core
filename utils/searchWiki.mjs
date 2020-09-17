@@ -1,4 +1,4 @@
-var rp = require("request-promise-native")
+import fetch from "node-fetch"
 
 let searchOptions = {
 	uri: "https://warframe.fandom.com/api/v1/Search/List",
@@ -29,14 +29,14 @@ let detailOptions = {
 	json: true
 }
 
-module.exports = function(prompt){
+export default function(query){
 	return new Promise(function(resolve, reject) {
-		searchOptions.qs.query = prompt
+		searchOptions.qs.query = query
 
-		rp(searchOptions)
-			.then(function (result) {
+		fetch(searchOptions)
+			.then(result => {
 				detailOptions.qs.ids = result.items[0].id
-				rp(detailOptions)
+				fetch(detailOptions)
 					.then(result =>
 						resolve(result)
 					)

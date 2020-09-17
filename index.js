@@ -1,7 +1,7 @@
 //External dependencies
 const discordErrorHandler = require("discord.js-handles")
 
-module.exports = function(client) {
+export default function(client) {
 
 	console.log("nova-core: initializing")
 
