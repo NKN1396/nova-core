@@ -31,6 +31,9 @@ let detailOptions = {
 
 export default function(query){
 	return new Promise(function(resolve, reject) {
+		
+
+
 		searchOptions.qs.query = query
 
 		fetch(searchOptions)

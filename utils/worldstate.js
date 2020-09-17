@@ -1,9 +1,11 @@
 import fetch from "node-fetch"
+import _ from "lodash"
+const { isEmpty } = _
 
 const worldstateUrl = "https://content.warframe.com/dynamic/worldState.php"
 
-var cachedWorldstate = {}
-var timestampNextFetch = 0
+let cachedWorldstate = {}
+let timestampNextFetch = 0
 
 export default function() {
 	return new Promise(async (resolve, reject) => {
@@ -16,15 +18,15 @@ export default function() {
 		//Worldstate older than a minute
 		//Attempt to fetch new one
 		fetch(worldstateUrl)
-			.then(response => {
+			.then(response => response.json())
+			.then(json => {
 				timestampNextFetch = Date.now() + 60000	//60s * 1000ms/s = 1 minute
-				cachedWorldstate = response.json()
+				cachedWorldstate = json
 				resolve(cachedWorldstate)
 			})
 			.catch(error => {
 				console.log(error)
-				if(Object.keys(cachedWorldstate).length === 0
-					&& cachedWorldstate.constructor === Object)
+				if(isEmpty(cachedWorldstate) === false)
 				{
 					reject("No valid worldstate has been cached yet.")
 				}

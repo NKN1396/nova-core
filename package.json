@@ -6,7 +6,10 @@
 	"engines": {
 		"node": "13.2.0"
 	},
-	"scripts": {},
+	"scripts": {
+		"test": "node -r esm test.js",
+		"start": "node index.js"
+	},
 	"keywords": [
 		"discord.js",
 		"discord",
@@ -27,5 +30,8 @@
 		"lodash": "^4.17.19",
 		"luxon": "^1.17.2",
 		"node-fetch": "^2.6.1"
+	},
+	"devDependencies": {
+		"esm": "^3.2.25"
 	}
 }
