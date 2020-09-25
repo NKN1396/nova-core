@@ -8,12 +8,12 @@ const fetchTimeoutTime = 10000	//TTL of ongoing fetch requests (only one at a ti
 
 let cachedWorldstate = {}
 let timestampNextFetch = 0
-let currentRequest = null
+let activeRequest = null
 
 //Actually fetches the worldstate from DEs website. Should only be called once at a time.
 async function fetchWorldstate() {
 	//Check if there's already a fetch going on
-	if(currentRequest !== null) { return }
+	if(activeRequest !== null) { return }
 	//No other fetch job has been queued yet, proceeding..
 
 	//Set timeout for fetch request
@@ -36,7 +36,7 @@ async function fetchWorldstate() {
 	clearTimeout(timeout)	//Tell AbortController that nothing needs to be done anymore
 	
 	//Clear fetching state
-	currentRequest = null
+	activeRequest = null
 }
 
 
@@ -53,10 +53,10 @@ export default async function() {
 		worldstateResolveTime,
 	)
 
-	if(currentRequest === null){
-		currentRequest = fetchWorldstate()
+	if(activeRequest === null){
+		activeRequest = fetchWorldstate()
 	}
-	await currentRequest
+	await activeRequest
 
 	clearTimeout(timeout)
 	if(isEmpty(cachedWorldstate) === true)
