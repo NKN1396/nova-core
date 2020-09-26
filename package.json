@@ -4,7 +4,7 @@
 	"description": "These are the core functions of Nova, used by both, nova-public and nova-makeshift.",
 	"main": "index.js",
 	"engines": {
-		"node": "13.2.0"
+		"node": "14.0.0"
 	},
 	"scripts": {
 		"test": "node -r esm test.js",
