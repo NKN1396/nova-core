@@ -1,0 +1,12 @@
+queries
+- query	[string]	//The search query
+- wikia ID	[?]	//What article ID Wikia resolves to with that query
+- last checked (wikia)	[timestamp]	//When Wikia was last checked
+- official ID [string]	//Official ID (e.g. "Lotus/Lang/...") - probably just needed for debugging purposes or so
+
+articles
+- ID	[?]	//Wikia ID
+- revision ID	[Number]	//The latest stored version in the database
+- lastChecked	[Date]	//Describes when the article was last checked for freshness on Wikia
+- content	[JSON]	//The cached page content from Wikia
+- override(s)	[JSON]	//What to send instead of the fetched article (if anything) OR maybe overrides of the actual content
