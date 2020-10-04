@@ -2,7 +2,10 @@
 node_modules/
 
 # Token
-token.json
+/token.json
+
+# Cached database
+/utils/searchWiki/wiki.sqlite3
 
 #logs
 **/log
