@@ -6,8 +6,9 @@
 	"engines": {
 		"node": "14.0.0"
 	},
+	"type": "module",
 	"scripts": {
-		"test": "node -r esm test.js",
+		"test": "node test.js",
 		"start": "node index.js"
 	},
 	"keywords": [
@@ -26,12 +27,11 @@
 		"common-tags": "^1.8.0",
 		"discord.js": "^12.3.1",
 		"discord.js-commando": "^0.10.0",
-		"discord.js-handles": "github:NKN1396/discord.js-handles#master",
+		"discord.js-handles": "github:NKN1396/discord.js-handles#stable",
 		"lodash": "^4.17.19",
 		"luxon": "^1.17.2",
-		"node-fetch": "^2.6.1"
+		"node-fetch": "^2.6.1",
+		"sqlite3": "^5.0.0"
 	},
-	"devDependencies": {
-		"esm": "^3.2.25"
-	}
+	"devDependencies": {}
 }
