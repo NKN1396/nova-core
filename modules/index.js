@@ -1,9 +1,9 @@
-module.exports = function (client) {
-	require("./greet")(client)
-	require("./sassynova")(client)
-	require("./sarcasm")(client)
-	require("./soontm")(client)
-	require("./voicemagic")(client)
-	require("./prism2")(client)
-	console.log("Nova modules loaded.")
+import sassynova from "./sassynova"
+import sarcasm from "./sarcasm"
+import soontm from "./soontm"
+
+export default function (client) {
+	sassynova(client)
+	sarcasm(client)
+	soontm(client)
 }

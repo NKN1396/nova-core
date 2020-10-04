@@ -5,7 +5,7 @@ const makeshift = require("./../resources/makeshift.json")
  * Reacts with "TM" to a message ending with "soon" in order to keep up the soon™ meme.
  * @param {*} bot The bot client.
  */
-module.exports = function(bot){
+export default function(bot){
 	bot.on("message", message => {
 
 		//Check if message ends with "soon"

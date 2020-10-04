@@ -2,7 +2,7 @@
  * Points out obvious sarcasm. Triggered by ending a message with "/s".
  * @param {*} client The Discord.js client to hook into.
  */
-module.exports = function(client){
+export default function(client){
 	client.on("message", message => {
 
 		if(
