@@ -1,5 +1,6 @@
 import fetch from "node-fetch"
-import { isEmpty } from "lodash"
+import _ from "lodash"
+const { isEmpty } = _
 import AbortController from "abort-controller"
 
 const worldstateUrl = "https://content.warframe.com/dynamic/worldState.php"
