@@ -1,37 +1,37 @@
 {
-	"name": "nova-core",
-	"version": "0.1.0",
-	"description": "These are the core functions of Nova, used by both, nova-public and nova-makeshift.",
-	"main": "index.js",
-	"engines": {
-		"node": "14.0.0"
-	},
-	"type": "module",
-	"scripts": {
-		"test": "node test.js",
-		"start": "node index.js"
-	},
-	"keywords": [
-		"discord.js",
-		"discord",
-		"node",
-		"bot"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/NKN1396/nova-core"
-	},
-	"author": "NKN1396",
-	"license": "MIT",
-	"dependencies": {
-		"common-tags": "^1.8.0",
-		"discord.js": "^12.3.1",
-		"discord.js-commando": "^0.10.0",
-		"discord.js-handles": "github:NKN1396/discord.js-handles#stable",
-		"lodash": "^4.17.19",
-		"luxon": "^1.17.2",
-		"node-fetch": "^2.6.1",
-		"sqlite3": "^5.0.0"
-	},
-	"devDependencies": {}
+  "name": "nova-core",
+  "version": "0.1.0",
+  "description": "These are the core functions of Nova, used by both, nova-public and nova-makeshift.",
+  "main": "index.js",
+  "engines": {
+    "node": "14.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord.js",
+    "discord",
+    "node",
+    "bot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NKN1396/nova-core"
+  },
+  "author": "NKN1396",
+  "license": "MIT",
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.3.1",
+    "discord.js-commando": "^0.10.0",
+    "discord.js-handles": "github:NKN1396/discord.js-handles#stable",
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0",
+    "node-fetch": "^2.6.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {}
 }
